@@ -148,6 +148,7 @@ p {
   color: black;
   text-align: center;
   margin:2px;
+  text-decoration: none;
 }
 
 .a_link:hover {
@@ -239,7 +240,6 @@ nav{
 .navigator {
   padding-left: 70%;
 }
-
 
 * {
   box-sizing: border-box;
