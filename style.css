@@ -45,6 +45,10 @@ body {
   font-size: 1em;
   background-color: #e7e5e4;
 }
+main{
+  background-color: #e7e5e4;
+}
+
 a {
   color: #242424;
   text-decoration: none;
@@ -69,6 +73,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
+  padding-bottom: 300px;
 }
 h2 {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
@@ -141,14 +146,6 @@ p {
   font-size: 1.1em;
   color: black;
   text-align: center;
-}
-
-.a_link {
-  font-size: 1.1em;
-  color: black;
-  text-align: center;
-  margin:2px;
-  text-decoration: none;
 }
 
 .a_link:hover {
@@ -366,6 +363,11 @@ nav{
   100% {
     transform: translateX(-50%) translateY(0px) translateZ(0);  
   }
+}
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: #e7e5e4;
 }
 
 .body {
@@ -1041,8 +1043,8 @@ nav{
   justify-content: center;
   outline: none;
   cursor: pointer;
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  height: 45px;
   background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
   border-radius: 30px;
   border: 1px solid #8F9092;
@@ -1077,6 +1079,8 @@ nav{
   display: block;
   text-align: center;
   margin-bottom: 20px;
+  text-decoration: none;
+  color:#242424 ;
 }
 
 .mail:hover, .cv:hover {
@@ -1092,11 +1096,13 @@ nav{
   border: 1px solid #8F9092;
 }
 
-fieldset{
-  border: 1px solid black;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+.form1{
+  margin: 5px;
+  padding: 15px;
+  background-color: whitesmoke;
   border-radius: 5px;
-  font-size: 18px;
 }
-
-
+#formInput{
+  display: inline-block;
+  width: 375px;  
+}
