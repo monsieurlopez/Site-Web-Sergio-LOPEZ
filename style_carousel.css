@@ -8,12 +8,14 @@ section{
     height: 450px;
     width: 200px;
     border: solid 1px rgb(148, 146, 146);
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
 }
   
 .carousel-item img {
     height: 100%;
     width: 100%;
     /*object-fit: cover;*/  
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
 }
 
 .d-block {

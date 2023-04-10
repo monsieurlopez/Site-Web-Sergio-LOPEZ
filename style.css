@@ -25,17 +25,6 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-
-.footer_portfolio{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  padding: 20px 50px;
-  bottom: 0;
-  left: 0;
-}
 div {
   text-align: center;
 }
@@ -58,11 +47,6 @@ em2 {
   color: black;
   font-style: normal;
   font-weight: bold;
-}
-
-em2:hover {
-  text-decoration: underline;
-
 }
 
 h1 {
@@ -147,12 +131,6 @@ p {
   color: black;
   text-align: center;
 }
-
-.a_link:hover {
-  text-decoration-line: underline;
-  font-weight: bold;
-}
-
 .container2 {
   font-size: 1.1em;
   color: black;
@@ -178,6 +156,7 @@ p {
 
 .lien_icone {
   margin-left: 10px;
+  text-decoration: none;
 }
 
 /*@keyframes shake {
@@ -198,18 +177,6 @@ p {
   border-bottom: 1px solid #8e86b5;*/
   padding: 20px;
 }
-
-/*.a_propos_main {
-  width: 50%;
-  margin: auto;
-}*/
-
-nav{
-  font-family: 'Manrope', sans-serif;
-  font-size: 1em;
-}
-
-
 
 .container {
   display: flex; 
@@ -236,12 +203,16 @@ nav{
 }
 .navigator {
   padding-left: 70%;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
 }
 
 * {
   box-sizing: border-box;
 }
 
+*************************************************
+/* Imagen del niño */
 .image_moving{
   padding-left: 5%;
 }
@@ -924,7 +895,7 @@ body {
   border-radius: 50%;
 }
 
-*************
+**********************************
 .container {
   display: flex;
   justify-content: center;
@@ -959,33 +930,6 @@ body {
   padding: 10px;
 }
 
-/*.barra {
-  width: 120%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-}
-
-.progreso {
-  width: var(--w);
-  height: 20px;
-  background-color: blue;
-  border-radius: 10px;
-  animation: Aumentar 5s ease;
-}
-
-@keyframes Aumentar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: var(--w);
-  }
-}*/
-
 .box-container:last-child {
   margin-right: 0;
 }
@@ -1005,7 +949,6 @@ body {
   border-radius: 2px solid black;
 }
 
-
 .box-container:hover {
   
   background-color: #bdb8b8;
@@ -1019,22 +962,6 @@ body {
   rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 }
-/*.progreso:hover {
-  width: var(--w);
-  height: 20px;
-  background-color: #2b2b2b;
-  border-radius: 10px;
-  animation: Reiniciar 5s ease;
-}
-
-@keyframes Reiniciar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: var(--w);
-  }
-}*/
 
 .button {
   padding: 10px 20px;
@@ -1105,4 +1032,59 @@ body {
 #formInput{
   display: inline-block;
   width: 375px;  
+}
+
+**************************
+/* Iconos footer */
+
+.icons {
+	display: flex;
+	column-gap: 25px;
+}
+.icon {
+	display: inline-flex;
+	width: 45px;
+	height: 45px;
+	text-decoration: none;
+	font-size: 26px;
+  color: #242424;
+	border-radius: 50%;
+	outline: 2px solid #242424;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+.icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--wordpress:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--github:hover {
+	background-color: Black;
+	outline-color: black;
+}
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
 }
